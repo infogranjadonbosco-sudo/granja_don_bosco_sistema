@@ -4,12 +4,7 @@
 
 ---
 
-## 🌐 FILOSOFÍA Y REFERENCIA TÉCNICA
-Este sistema fue diseñado y desarrollado originalmente para la modernización operativa de la **Granja Don Bosco**. Como autores, **Rodrigo Ariel y Melvin Omar** hemos decidido mantener el código con una visión de transparencia, sirviendo como una **referencia técnica** para el sector agropecuario. 
 
-Aunque el proyecto nace para una entidad privada, creemos que puede servir como base o inspiración para la digitalización de otros entornos similares, fomentando la colaboración técnica y el intercambio de buenas prácticas en la comunidad.
-
----
 
 ### 👨‍💻 Equipo de Desarrollo
 Este proyecto ha sido diseñado y desarrollado con mucho entusiasmo por:

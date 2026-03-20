@@ -53,3 +53,4 @@ El sistema organiza los productos automáticamente en las siguientes categorías
 Proyecto desarrollado para Fines Académicos y Profesionales.
 Autores: Melvin Omar Lopez / Rodrigo Ariel Lopez
 --------------------------------------------------
+ 
