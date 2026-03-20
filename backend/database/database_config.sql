@@ -24,3 +24,4 @@ CREATE POLICY "Admins modifican config" ON configuracion
 FOR ALL USING (
   (SELECT rol FROM usuarios WHERE id = auth.uid()) = 'admin'
 );
+ 
