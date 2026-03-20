@@ -57,4 +57,4 @@ graph TD
 ### 🛠️ Tecnología Detrás del Proyecto
 Para que la app sea rápida y confiable, elegimos herramientas modernas:
 *   **Frontend:** Construido con `React` y `Vite`, diseñado para ser responsivo (se ve genial tanto en PC como en el celular).
-*   **Base de Datos:** Potenciado por `Supabase`, lo que nos da seguridad y sincronización de datos en tiempo real.
+*   **Base de Datos:** Potenciado por `Supabase`, lo que nos da seguridad y sincronización de datos en tiempo real. 
