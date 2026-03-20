@@ -2,13 +2,16 @@
 
 Este documento contiene la información necesaria para la revisión y el despliegue local del sistema.
 
+=== ⚠️ NOTA DE SEGURIDAD PARA EL EVALUADOR ===
+Este archivo ha sido incluido temporalmente con el único propósito de facilitar la revisión técnica del funcionamiento del proyecto. Se reconoce y manifiesta que, en un entorno de producción real, este tipo de información sensible (credenciales y accesos) debe ser gestionada siguiendo los estándares internacionales de ciberseguridad, mediante el uso de bóvedas de secretos (Secrets Vaults) o variables de entorno cifradas. Por motivos exclusivamente académicos y de revisión funcional, se proporcionan los siguientes accesos de prueba:
+
 === 🛠️ CONFIGURACIÓN TÉCNICA (LOCAL) ===
-Para que la aplicación funcione correctamente en su computadora local (después de 'npm install'), debe renombrar el archivo '.env.example' a '.env' o crear uno nuevo con las siguientes claves que ya están configuradas en este proyecto:
+Para que la aplicación funcione correctamente en su computadora local (después de 'npm install'), debe renombrar el archivo '.env.example' a '.env' o crear uno nuevo con las siguientes claves:
 
 VITE_SUPABASE_URL=[URL DE TU PROYECTO SUPABASE]
 VITE_SUPABASE_ANON_KEY=[TU CLAVE ANON DE SUPABASE]
 
-Nota: La conexión en vivo (en el enlace de Netlify) ya cuenta con estas variables configuradas globalmente.
+Nota: El despliegue oficial en Netlify ya cuenta con estas variables configuradas internamente.
 
 === 👤 CUENTAS DE USUARIO PARA PRUEBAS ===
 
@@ -26,7 +29,7 @@ Nota: La conexión en vivo (en el enlace de Netlify) ya cuenta con estas variabl
    - Clave: RMedina.2026.GDB!
 
 
--- PERSONAL / COLABORADORES (Acceso Limitado: Tienda, Cronómetro, Anuncios) --
+-- PERSONAL / COLABORADORES (Acceso Limitado: Tienda, Jornada, Anuncios) --
 1. Diego Lopez
    - Email: diego.lopez@granjadonbosco.com
    - Clave: DLopez.2026.GDB!
@@ -35,17 +38,9 @@ Nota: La conexión en vivo (en el enlace de Netlify) ya cuenta con estas variabl
    - Email: elena.sanchez@granjadonbosco.com
    - Clave: ESanchez.2026.GDB!
 
-3. Ana Martinez
-   - Email: ana.martinez@granjadonbosco.com
-   - Clave: AMartinez.2026.GDB!
-
-4. Luis Gomez
-   - Email: luis.gomez@granjadonbosco.com
-   - Clave: LGomez.2026.GDB!
-
 
 === 📦 CATEGORÍAS DEL SISTEMA ===
-El sistema organiza los productos automáticamente en las siguientes categorías maestras para evitar duplicados:
+El sistema organiza los productos automáticamente en las siguientes categorías maestras:
 1. LÁCTEOS Y DERIVADOS
 2. PRODUCTOS CÁRNICOS
 3. AVES Y DERIVADOS (Pollo, Huevos, etc.)

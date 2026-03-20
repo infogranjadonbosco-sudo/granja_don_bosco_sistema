@@ -1,0 +1,226 @@
+/* ========================================== */
+/* DISEÑO SISTEMA RESPONSIVE */
+/* ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfbc0;
+  color: #333;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main-app-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CAJA DE BÚSQUEDA GLOBAL */
+.nav-search-input::placeholder {
+  color: #666;
+}
+
+/* NAVBAR RESPONSIVA - Estructura Base */
+.navbar-fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1b5e20;
+  /* Color original */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-links-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.navbar-user-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-profile-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-profile-name {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.logout-btn-nav {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ÁREA DE CONTENIDO */
+.app-content-area {
+  flex: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* UTILERÍAS PARA TABLAS RESPONSIVES */
+.responsive-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+/* SISTEMA DE CHAT BASE */
+.chat-container-responsive {
+  display: flex;
+  gap: 0;
+  width: 100%;
+}
+
+.chat-sidebar-responsive {
+  flex-shrink: 0;
+}
+
+.chat-content-responsive {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ========================================== */
+/* MEDIA QUERIES (MOBILE / ADAPTATION) */
+/* ========================================== */
+
+@media (max-width: 992px) {
+  .navbar-fixed {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .navbar-links-group {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    justify-content: flex-start;
+  }
+
+  .navbar-user-group {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-content-area {
+    padding: 15px 10px;
+  }
+
+  .nav-item {
+    font-size: 0.75rem;
+    padding: 8px 10px;
+  }
+
+  /* Grids que se ajustan */
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  /* CHAT RESPONSIVO */
+  .chat-container-responsive {
+    flex-wrap: wrap;
+    gap: 15px;
+    height: auto !important;
+  }
+
+  .chat-sidebar-responsive {
+    width: 100% !important;
+    max-height: 250px;
+    border-radius: 15px !important;
+  }
+
+  .chat-content-responsive {
+    min-width: 100% !important;
+    height: 60vh !important;
+    border-radius: 15px !important;
+  }
+}
+
+/* ========================================== */
+/* ANIMACIONES  */
+/* ========================================== */
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(27, 94, 32, 0.1);
+  border-top: 5px solid #1b5e20;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fdfbc0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  gap: 20px;
+}
