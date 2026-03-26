@@ -1,6 +1,6 @@
 # 🚜 SISTEMA DE GESTIÓN Y VENTAS - GRANJA DON BOSCO
 
----¡Bienvenidos al repositorio oficial de nuestro proyecto! 🌾✨ Este sistema nace de la necesidad de modernizar las operaciones diarias de **Granja Don Bosco**, llevando el control de inventario, ventas y equipo humano de las libretas de papel a la palma de la mano.
+---¡Bienvenidos al repositorio oficial de nuestro proyecto! 🌾✨ Este sistema nace de la necesidad de modernizar las operaciones diarias de **Granja Don Bosco**, llevando el control de inventario, ventas y equipo humano de las libretas y un Sistema Web desactualizado y basico hacia una plataforma totalmente moderna y automatizada.
 
 ---
 
@@ -53,3 +53,10 @@ graph TD
 Para que la app sea rápida y confiable, elegimos herramientas modernas:
 *   **Frontend:** Construido con `React` y `Vite`, diseñado para ser responsivo (se ve genial tanto en PC como en el celular).
 *   **Base de Datos:** Potenciado por `Supabase`, lo que nos da seguridad y sincronización de datos en tiempo real. 
+
+---
+
+### 🔐 Seguridad y Acceso
+Para revisar los roles de usuario, credenciales de administración y protocolos de seguridad del sistema, consulta nuestro archivo: 
+[**Guía de Seguridad de Acceso**](./SEGURIDAD_DE_ACCESO.md)
+ 
